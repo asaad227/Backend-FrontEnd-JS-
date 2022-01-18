@@ -15,7 +15,7 @@ const debug = debugLib("api-w7-home:server");
  * Get port from environment and store in Express.
  */
 
-const port = normalizePort(process.env.PORT || "5000");
+const port = normalizePort(process.env.PORT || "5000/clubs");
 app.set("port", port);
 
 /**
