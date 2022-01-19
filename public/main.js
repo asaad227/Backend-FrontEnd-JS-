@@ -5,7 +5,7 @@ const timeDetails = document.getElementById("time");
 timeDetails.innerHTML = new Date();
 
 async function getApi() {
-  const response = await fetch(`http://localhost:5000/`);
+  const response = await fetch(`http://localhost:5000/clubs`);
   //destructure the data and get the array out of it.
   const { payload } = await response.json();
   console.log(payload);
